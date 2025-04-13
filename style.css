@@ -1,0 +1,734 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0f3c;
+    color: white;
+  }
+  
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 50, 0.8);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #00d4ff;
+  }
+  
+  .hero {
+    .hero {
+        background: url('background.jpg') center/cover no-repeat;
+        /* other styles */
+      }      
+    margin-left: 220px;
+    height: 100vh;
+    background: url('background.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 15px;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 20px;
+    color: #ddd;
+  }
+  footer {
+    margin-left: 220px;
+    background-color: #081237;
+    padding: 20px;
+    text-align: center;
+    color: #ccc;
+    border-top: 2px solid #00d4ff;
+  }
+  
+  footer .social-icons {
+    margin: 10px 0;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    color: #00d4ff;
+  }
+  footer .social-icons a {
+    margin: 0 12px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+/* Smooth hover animation for nav links */
+nav a {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    transform: translateX(5px);
+    color: #00d4ff;
+  }
+  
+  /* Hover effect for profile photo */
+  .profile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00d4ff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Footer icons hover */
+  footer .social-icons a:hover {
+    color: #00d4ff;
+    transform: scale(1.2);
+  }
+/* MOBILE RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    nav {
+      position: static;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    nav li {
+      margin-bottom: 0;
+    }
+  
+    .hero {
+      margin-left: 0;
+      padding: 40px 20px;
+      height: auto;
+    }
+  
+    footer {
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    .profile {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .hero-text h1 {
+      font-size: 28px;
+    }
+  
+    .hero-text p {
+      font-size: 16px;
+    }
+  }
+/* --------------------
+   ABOUT PAGE STYLING
+-------------------- */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 220px;
+    padding: 50px 30px;
+    background: linear-gradient(to right, #0f1b4c, #001f3f);
+    color: white;
+  }
+  
+  .about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px #00d4ff;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-text {
+    max-width: 600px;
+    margin-left: 40px;
+  }
+  
+  .about-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00d4ff;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .about-contact p {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  
+  .about-contact i {
+    color: #00d4ff;
+    margin-right: 10px;
+  }
+/* ------------------------
+   EXTRAS SECTION STYLING
+------------------------ */
+
+.extras {
+    margin-left: 220px;
+    background-color: #0a1a3f;
+    padding: 40px 30px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .extra-section h2 {
+    color: #00d4ff;
+    margin-bottom: 15px;
+    font-size: 24px;
+    border-bottom: 1px solid #00d4ff;
+    padding-bottom: 5px;
+  }
+  
+  .extra-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .extra-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .extra-section ul li:hover {
+    background-color: rgba(0, 212, 255, 0.15);
+  }
+/* ------------------------
+   RECIPE PAGE STYLING
+------------------------ */
+
+.recipe {
+    margin-left: 220px;
+    padding: 50px 30px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+  }
+  
+  .recipe-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffdb58;
+  }
+  
+  .recipe-header p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-style: italic;
+  }
+  
+  .recipe-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+  }
+  
+  .ingredients, .instructions {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .ingredients h2,
+  .instructions h2 {
+    color: #00ffd5;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .ingredients ul,
+  .instructions ol {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  
+  .ingredients li,
+  .instructions li {
+    margin-bottom: 10px;
+  }
+  .recipe-image {
+    margin-left: 220px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .recipe-image img {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe-image img:hover {
+    transform: scale(1.02);
+  }
+  
+  .extras-recipe {
+    margin-left: 220px;
+    padding: 40px 30px;
+    background-color: #142850;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .extras-recipe h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+  }
+  
+  .extras-recipe ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .extras-recipe li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 10px;
+  }
+/* ------------------------
+   BETTER PANCAKE PAGE STYLING
+------------------------ */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c1445;
+    color: white;
+  }
+  
+  .recipe-image {
+    margin-left: 220px;
+    text-align: center;
+    padding: 40px 30px 20px;
+  }
+  
+  .recipe-image img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .recipe-image img:hover {
+    transform: scale(1.03);
+  }
+  
+  .recipe {
+    margin-left: 220px;
+    padding: 20px 30px 60px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  
+  .recipe-header h1 {
+    font-size: 38px;
+    color: #ffdb58;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-header p {
+    font-size: 18px;
+    color: #c0e8f9;
+    margin-bottom: 30px;
+  }
+  
+  .recipe-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .ingredients, .instructions {
+    flex: 1;
+    min-width: 280px;
+    background-color: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .ingredients h2,
+  .instructions h2 {
+    color: #00ffd5;
+    margin-bottom: 10px;
+  }
+  
+  .ingredients li,
+  .instructions li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+/* -------------
+   SIDEBAR NAVIGATION
+------------- */
+
+.side-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 180px;
+    background-color: #0a0f2c;
+    padding-top: 30px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .side-nav .logo {
+    color: #00ffd5;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .side-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .side-nav ul li {
+    width: 100%;
+  }
+  
+  .side-nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .side-nav ul li a:hover,
+  .side-nav ul li a.active {
+    background-color: #1b2a66;
+    color: #00ffd5;
+    font-weight: bold;
+  }
+  body {
+    padding-left: 180px; /* matches the nav width */
+  }
+/* -------------
+   Responsive Design
+------------- */
+@media (max-width: 768px) {
+    .side-nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px;
+    }
+  
+    .side-nav .logo {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+  
+    .side-nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: auto;
+      margin: 0;
+    }
+  
+    .side-nav ul li {
+      width: auto;
+      margin: 0 10px;
+    }
+  
+    .side-nav ul li a {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  
+    body {
+      padding-left: 0; /* remove left padding on mobile */
+      padding-top: 100px; /* add top padding instead */
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0.container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      ,0,0.4);
+  }
+     /* --- Recipe Page Styling --- */
+
+.recipe-container {
+    max-width: 850px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .recipe-container h1 {
+    font-size: 2.5rem;
+    color: #facc15;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .recipe-image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .recipe-info h2,
+  .nutrition h2 {
+    color: #60a5fa;
+    margin-top: 30px;
+    border-bottom: 2px solid #60a5fa;
+    padding-bottom: 5px;
+  }
+  
+  .recipe-info ul,
+  .recipe-info ol,
+  .nutrition ul {
+    margin-left: 20px;
+    line-height: 1.8;
+  }
+  
+  .recipe-info li,
+  .nutrition li {
+    color: #f3f4f6;
+  }
+  
+  /* Footer tweaks */
+  footer {
+    margin-top: 60px;
+    background-color: #1e1f5c;
+    padding: 25px 10px;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+  
+  footer a {
+    color: #facc15;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Make it mobile-friendly */
+  @media (max-width: 600px) {
+    .recipe-container {
+      padding: 20px;
+    }
+  
+    .recipe-container h1 {
+      font-size: 2rem;
+    }
+  }
+  .navbar {
+    background-color: #1e293b;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover,
+  .navbar .active {
+    background-color: #facc15;
+    color: #1e293b;
+  }
+  body {
+    background: linear-gradient(to right, #1e3a8a, #1e40af);
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .recipe-container {
+    max-width: 700px;
+    width: 90%;
+    margin: 60px auto;
+    padding: 30px;
+  
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+  }
+  .recipe-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe-image:hover {
+    transform: scale(1.03);
+  }
+  @media (max-width: 600px) {
+    .recipe-container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .recipe-container h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .recipe-info ul,
+    .recipe-info ol,
+    .nutrition ul {
+      padding-left: 20px;
+    }
+  }
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #facc15;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+                                
